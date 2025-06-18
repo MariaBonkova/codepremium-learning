@@ -63,8 +63,102 @@ Medium: 11px
   box-sizing: border-box;
 }
 body {
-  font-family: sans-serif;
+  font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
+}
+html {
+  font-size: 62.5%;
+  /*това се отнася след това до оразмеряването с rem. 1rem=10px */
+}
+.section-hero {
+  background-color: #e6edf7;
+  padding: 9.6rem 0;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  max-width: 130rem;
+  margin-inline: auto;
+  gap: 9.6rem;
+}
+
+.hero-image {
+  width: 100%;
+}
+
+.heading-primary {
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s; /*анимира бутона плавно да сменя фона си*/
+}
+
+.btn-full:link,
+.btn-full:visited {
+  color: #fff;
+  background-color: #004aad;
+}
+
+.btn-outline:link,
+.btn-outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+.btn-full:hover,
+.btn-full:active {
+  background-color: #00439c;
+}
+.btn-outline:hover,
+.btn-outline:active {
+  background-color: #e6edf7;
+  box-shadow: inset 0 0 03px #fff;
+}
+.margin-right-small {
+  margin-right: 1.6rem !important;
+}
+.customers-box {
+  margin-top: 8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.customers-image-box img {
+  height: 3.6rem;
+  width: 3.6rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #e6edf7;
+}
+.customers-image-box img:last-child {
+  margin-right: 0;
+}
+.customer-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.customer-text span {
+  color: #00439c;
 }
