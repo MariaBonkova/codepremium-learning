@@ -72,9 +72,53 @@ html {
   font-size: 62.5%;
   /*това се отнася след това до оразмеряването с rem. 1rem=10px */
 }
+
+.header {
+  background-color: #e6edf7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4.8rem;
+  height: 9.6rem; /* фиксирана височина, прави се така че като скролна по страницата навбара да стои отгоре да не изчезва*/
+}
+
+.logo {
+  height: 2.4rem;
+}
+.nav-list {
+  display: flex;
+  gap: 4.8rem;
+  align-items: center;
+}
+
+.nav-list li {
+  list-style: none;
+}
+.nav-list a:link,
+.nav-list a:visited {
+  text-decoration: none;
+  color: #555;
+  font-weight: 400;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+.nav-list a:hover,
+.nav-list a:active {
+  color: #00439c;
+}
+
+.nav-list .nav-link-cta:link,
+.nav-list .nav-link-cta:visited {
+  display: inline-block;
+  padding: 1.2rem 2.4rem;
+  background-color: #00439c;
+  color: #fff;
+  border-radius: 9px;
+}
+
 .section-hero {
   background-color: #e6edf7;
-  padding: 9.6rem 0;
+  padding: 4.8rem 0 9.6rem 0;
 }
 
 .hero {
@@ -84,6 +128,7 @@ html {
   max-width: 130rem;
   margin-inline: auto;
   gap: 9.6rem;
+  padding: 3.2rem;
 }
 
 .hero-image {
