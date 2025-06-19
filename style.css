@@ -72,6 +72,10 @@ html {
   font-size: 62.5%;
   /*това се отнася след това до оразмеряването с rem. 1rem=10px */
 }
+.container {
+  max-width: 120rem;
+  margin-inline: auto;
+}
 
 .header {
   background-color: #e6edf7;
@@ -126,7 +130,6 @@ html {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   max-width: 130rem;
-  margin-inline: auto;
   gap: 9.6rem;
   padding: 3.2rem;
 }
@@ -206,4 +209,19 @@ html {
 }
 .customer-text span {
   color: #00439c;
+}
+
+.section-how {
+  padding: 9.6rem 0;
+}
+.grid {
+  display: grid;
+
+  gap: 9.6rem;
+}
+.grid--two-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--tree-cols {
+  grid-template-columns: repeat(3, 1fr);
 }
