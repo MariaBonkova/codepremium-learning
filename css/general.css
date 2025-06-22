@@ -71,6 +71,10 @@ html {
   font-size: 62.5%;
   /*това се отнася след това до оразмеряването с rem. 1rem=10px */
 }
+strong {
+  color: #004aad;
+  font-weight: 500;
+}
 .container {
   max-width: 120rem;
   margin-inline: auto;
@@ -165,4 +169,13 @@ html {
 }
 .grid--tree-cols {
   grid-template-columns: repeat(3, 1fr);
+}
+.margin-right-small {
+  margin-right: 1.6rem !important;
+}
+.margin-bottom-md {
+  margin-right: 4.8rem !important;
+}
+.text-align-center {
+  text-align: center;
 }
