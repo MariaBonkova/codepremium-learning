@@ -25,7 +25,7 @@ Large: 1.8
 
 - Primary: #004aad 
 - Tints:
-#e6edf7
+c7
 #ccdbef
 #336ebd
 
@@ -164,15 +164,48 @@ strong {
   display: grid;
   gap: 9.6rem;
 }
+.grid:last-child {
+  margin-bottom: 0;
+}
+.grid:not:last-child {
+  margin-bottom: 9.6rem;
+}
 .grid--two-cols {
   grid-template-columns: repeat(2, 1fr);
 }
 .grid--tree-cols {
   grid-template-columns: repeat(3, 1fr);
 }
+
+.grid--four-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
 .margin-right-small {
   margin-right: 1.6rem !important;
 }
 .margin-bottom-md {
   margin-right: 4.8rem !important;
+}
+.project-icon {
+  color: #00439c;
+  margin-right: 0.5rem;
+  height: 2rem;
+  width: 2rem;
+}
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.list-item {
+  font-size: 2.2rem;
+  color: #333;
+  font-weight: 300;
+}
+.list-icon {
+  width: 30px;
+  height: 30px;
+  color: #004aad;
+  margin-right: 10px;
 }
