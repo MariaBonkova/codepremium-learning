@@ -314,3 +314,29 @@
   padding: 0.8rem 3.2rem;
   transform: rotate(45deg);
 }
+.plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+.feature-icon {
+  background-color: #ccdbef;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  padding: 1.6rem;
+  color: #00439c;
+  margin-bottom: 1.6rem;
+}
+
+.feature-heading {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
