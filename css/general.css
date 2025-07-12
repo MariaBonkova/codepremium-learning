@@ -61,6 +61,11 @@ Medium: 11px
   padding: 0;
   box-sizing: border-box;
 }
+
+*:focus {
+  box-shadow: 0 0 0 0.8rem rgba(0, 74, 173, 0.9);
+}
+
 body {
   font-family: "Rubik", sans-serif;
   line-height: 1;

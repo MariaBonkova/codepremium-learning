@@ -21,7 +21,7 @@
   line-height: 1.6;
   margin-bottom: 4.8rem;
 }
-
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -122,6 +122,7 @@
   position: absolute;
   z-index: -1;
 }
+/*project-section*/
 .section-project {
   padding: 9.6rem 0 0 0;
 }
@@ -196,6 +197,8 @@
   font-size: 1.8rem;
   text-align: center;
 }
+
+/*testimonial-section*/
 .section-testimonials {
   background-color: #e6edf7;
   display: grid;
@@ -244,6 +247,7 @@
   transform: scale(1.1);
 }
 
+/*pricing-section*/
 .section-pricing {
   padding: 9.6rem;
 }
@@ -319,6 +323,7 @@
   line-height: 1.6;
   text-align: center;
 }
+/*feature-section*/
 .feature-icon {
   background-color: #ccdbef;
   width: 2.8rem;
@@ -339,4 +344,91 @@
 .feature-text {
   font-size: 1.8rem;
   line-height: 1.8;
+}
+
+/*cta-secton*/
+.section-cta {
+  padding: 9.6rem;
+}
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-image: linear-gradient(to right, #00439c, #6c9cdb);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  color: #333;
+  border-radius: 11px;
+  overflow: hidden; /*изрязва ъглите от снимката и ги прави заоблени като в цялата секция*/
+}
+.cta-text-box {
+  color: #001634;
+  padding: 4.8rem;
+}
+.cta-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.cta-text-box .heading-secondary {
+  color: #001634;
+  margin-bottom: 3.2rem;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem 1.6rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #e6edf7;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.cta-form input:focus,
+.cta-form select:focus,
+.cta-form button:focus {
+  box-shadow: 0 0 0 0.8rem rgba(230, 237, 247, 0.5);
+}
+
+.cta-form::placeholder {
+  color: #888;
+}
+
+.cta-form button {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  background-color: #001634;
+  color: #fff;
+  align-self: end;
+  padding: 1.2rem 1.6rem;
+}
+.cta-form button:hover {
+  background-color: #fff;
+  color: #001634;
+}
+
+.cta-image-box {
+  background-image: linear-gradient(
+      to right,
+      rgb(71, 139, 228, 0.25),
+      rgb(156, 186, 225, 0.25)
+    ),
+    url("/07-codepremium/img/appointment.png"); /*фонът се прелива и към снимката*/
+  background-size: cover; /*позиционира цялата снимка в кутията*/
 }
