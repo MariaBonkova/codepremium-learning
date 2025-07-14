@@ -185,6 +185,10 @@ strong {
 .grid--four-cols {
   grid-template-columns: repeat(4, 1fr);
 }
+.grid--fife-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .margin-right-small {
   margin-right: 1.6rem !important;
 }

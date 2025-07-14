@@ -348,7 +348,7 @@
 
 /*cta-secton*/
 .section-cta {
-  padding: 9.6rem;
+  padding: 9.6rem 0 12.6rem 0;
 }
 .cta {
   display: grid;
@@ -431,4 +431,68 @@
     ),
     url("/07-codepremium/img/appointment.png"); /*фонът се прелива и към снимката*/
   background-size: cover; /*позиционира цялата снимка в кутията*/
+}
+.footer {
+  padding: 12.8rem;
+  border-top: solid 1px #eee;
+}
+.grid-footer {
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+}
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 3.6rem;
+}
+.footer-navigation {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+}
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+  line-height: 1.6;
+}
+.footer-linka:hover,
+.footer-link:active {
+  color: #555;
+}
+.social-links {
+  display: flex;
+  gap: 2.4rem;
+  list-style-type: none;
+}
+.footer-logo {
+  width: 20rem;
+}
+.footer-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.copyright {
+  font-size: 1.4rem;
+  color: #767676;
+  line-height: 1.4;
+  margin-top: auto;
+}
+.contact {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.contact p {
+  margin: 1.6rem;
+}
+.social-icon {
+  width: 2.4rem;
+  height: 2.4rem;
 }
