@@ -147,3 +147,56 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/*544px*/
+@media (max-width: 34em) {
+  .grid--two-cols,
+  .grid--tree-cols,
+  .grid--four-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+  .hero {
+    padding: 0 3.2rem;
+  }
+  .hero-image {
+    width: 90%;
+  }
+  .image-box:nth-child(2) {
+    grid-row: 1; /*второто дете става първо*/
+  }
+  .image-box:nth-child(6) {
+    grid-row: 5; /*шестото дете става пето*/
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+  .cta-image-box {
+    grid-row: 1;
+    height: 32rem;
+  }
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+
+  .grid-footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .logo-col {
+    grid-column: 1/-1;
+  }
+}
