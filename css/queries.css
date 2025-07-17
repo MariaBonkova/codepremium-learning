@@ -1,0 +1,40 @@
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+  .testimonials-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/*брек пойнт на 1200px изчисляваме 1200*16-75еп*/
+@media (max-width: 75em) {
+  html {
+    /*установяваме че 9px е подходящ размер за шрифта 9/16*100 -56,24%*/
+    font-size: 56.25%;
+  }
+  .grid {
+    grid-row: 4.8rem;
+    column-gap: 6.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3, 6rem;
+  }
+
+  .heading-tertiaty {
+    font-size: 2.4rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+  .nav-list {
+    gap: 3.2rem;
+  }
+  .testimonials-container {
+    padding: 9.6rem 3.2rem;
+  }
+}
